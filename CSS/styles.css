@@ -9,7 +9,17 @@
 
 
 
-body { padding-top: 70px; /*for nav*/}
+body { padding-top: 70px;
+overflow-x:hidden; /*shapes cause horiz to appear */
+/*for nav*/}
+.techImg{
+  max-height:25px;max-width:25px;
+
+}
+.btnBackgroundYouTube{
+  background:url(Images/YouTubeLandscape.png)!important;
+ background-position: 10% 10% ;
+}
 
 .myFace{
 
@@ -27,14 +37,30 @@ display:inline-block;
 .no-flex{
   display:block !important;
 }
+.border-5{border-width: 5px !important;}
+
+.myGreyTransBackground{background: linear-gradient(rgb(255, 251, 217),transparent );
+  /*background: radial-gradient(at bottom center,rgba(255, 0, 0,0.5),rgba(255, 140, 0,0.4),rgba(255, 215, 0,0.3),rgba(255, 215, 0,0.2), rgba(255, 255, 255,0.25),  rgba(255, 255, 255,0.1) );*/
+}
+
+/*taken from one page wonder min bootstrap examples website*/
+.bg-circle{z-index:0;position:absolute;border-radius:100%;background:linear-gradient(0deg,#DEE1E4 0,#F8F8F8 100%)}
+.bg-circle-1{height:90rem;width:90rem;bottom:-55rem;left:-55rem; z-index:-1;}
+.bg-circle-2{height:50rem;width:50rem;top:-25rem;right:-25rem; z-index:-1;}
+.bg-circle-3{height:20rem;width:20rem;bottom:-10rem;right:5%; z-index:-1;}
+.bg-circle-4{height:30rem;width:30rem;top:-5rem;right:35%; z-index:-1;}
+
+.relativeParentImgCaption{position:relative;}
 
 
-
-
-
-
-
-
+.myCaption {
+  position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(237,245,67,0.85);
+      text-align: center;
+}
 
 
 
