@@ -6,3 +6,8 @@ $(".myCaption").not( $thisCaption).show("fast"); /*cannot detect clicks in ifram
    $thisCaption.toggle("fast");
   console.log("should of toggled");
 });
+
+/*so focus only from hover so if button clicked doesnt stay on with button being down*/
+$('[data-toggle="tooltip"]').tooltip({
+    trigger : 'hover'
+})
