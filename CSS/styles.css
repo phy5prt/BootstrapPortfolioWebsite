@@ -44,15 +44,15 @@ display:inline-block;
 .transparentGrey{
 background: linear-gradient(to top, rgba(222, 225, 228, 0.8), transparent,rgba(222, 225, 228, 0.8));
 }
-.bg-circleBottom{overflow: hidden;z-index:0;position:absolute;border-radius:100%;background:linear-gradient(0deg,rgb(255, 251, 217) 0,rgb(255, 245, 153) 100%)}
-.bg-circleBottom-1{height:90rem;width:90rem;bottom:0;left:-55rem; z-index:1;}
-.bg-circleBottom-2{height:50rem;width:50rem;bottom:0;right:-25rem; z-index:1;}
-.bg-circleBottom-3{height:20rem;width:20rem;bottom:0;right:5%; z-index:1;}
-.bg-circleBottom-4{height:30rem;width:30rem;bottom:0;right:35%; z-index:1;}
+.bg-circleBottom{z-index:0;position:absolute;border-radius:100%;background:linear-gradient(0deg,rgb(255, 251, 217) 0,rgb(255, 245, 153) 100%)}
+.bg-circleBottom-1{height:90rem;width:90rem;bottom:-10rem;left:-55rem; z-index:-1;}
+.bg-circleBottom-2{height:50rem;width:50rem;top:-25rem;right:-25rem; z-index:-1;}
+.bg-circleBottom-3{height:20rem;width:20rem;bottom:5rem;right:20rem; z-index:-1;}
+.bg-circleBottom-4{height:30rem;width:30rem;top:5rem;right:50rem; z-index:-1;}
 
 /*taken from one page wonder min bootstrap examples website*/
 /*dont know why any based off bottom but looks ok*/
-.bg-circle{overflow: hidden;z-index:0;position:absolute;border-radius:100%;background:linear-gradient(0deg,rgba(222, 225, 228, 1) 0,rgba(248, 248, 248, 1) 100%)}
+.bg-circle{z-index:0;position:absolute;border-radius:100%;background:linear-gradient(0deg,rgba(222, 225, 228, 1) 0,rgba(248, 248, 248, 1) 100%)}
 .bg-circle-1{height:90rem;width:90rem;top:-55rem;left:-55rem; z-index:-1;}
 .bg-circle-2{height:50rem;width:50rem;bottom:-25rem;right:-25rem; z-index:-1;}
 .bg-circle-3{height:20rem;width:20rem;top:-10rem;right:5%; z-index:-1;}

@@ -1,52 +1,75 @@
 
-  var loop = 0;
-  	(function animationLoop() {
-      loop++
-      switch (loop){
+  var loopTop = 0;
+  	(function animationLoopOnLoad() {
+      loopTop++
+      switch (loopTop){
   		case 1:
 
   			console.log(1);
   			$(".bg-circle").animate({left: '1px'},2000);
-  			setTimeout(animationLoop,500);
+  			setTimeout(animationLoopOnLoad,500);
         break;
 
   		case 2:
 
   			console.log(2);
   			$(".hidemeCircle").show();
-  			setTimeout(animationLoop,300);
+  			setTimeout(animationLoopOnLoad,300);
         break;
 
   	  case 3:
 
   				console.log(3);
   			$(".hidemeCircle").hide();
-  			setTimeout(animationLoop,400);
+  			setTimeout(animationLoopOnLoad,400);
   		 break;
 
   	case 4:
 
         console.log(4);
   			$(".hidemeCircle").show();
-  			setTimeout(animationLoop,100);
+  			setTimeout(animationLoopOnLoad,100);
         break;
 
   	case 5:
 
         console.log(5);
   			$(".hidemeCircle").hide();
-  			setTimeout(animationLoop,200);
+  			setTimeout(animationLoopOnLoad,200);
         break;
 
   		case 6:
 
-  		console.log(6);
+
   			$(".hidemeCircle").show();
 
-  		
+
   		break;
 
   		default:
   			console.log(" error");
 
   	}})();
+
+
+
+
+
+
+
+    	function animationLoopReachPageBottom() {
+
+
+
+    			console.log(7);
+    			$(".bg-circleBottom").animate({left: '1px'},2000);
+    		
+    	};
+
+      var triggerWhenInView = function() {
+         if($(window).scrollTop() + $(window).height() > $(document).height() - $(".myGreyTransBackground").height() -$("footer").height()) {
+animationLoopReachPageBottom();
+             $(window).off("scroll", triggerWhenInView);
+         }}
+      $(window).scroll(triggerWhenInView
+      );
