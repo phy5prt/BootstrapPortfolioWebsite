@@ -71,7 +71,7 @@ background: linear-gradient(to top,rgba(222, 225, 228, 0.8), rgba(222, 225, 228,
       text-align: center;
 }
 .transWhiteBackground{
-background: radial-gradient( rgba(255, 255, 255,0.8),rgba(255, 255, 255,0.5), transparent);/*rgba(247, 247, 247,0.8)*/
+background: radial-gradient( rgba(255, 255, 255,0.7),rgba(255, 255, 255,0.5), transparent);/*rgba(247, 247, 247,0.8)*/
    /*want inverse of inset box shadow*/
 
 }
