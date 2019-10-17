@@ -37,12 +37,13 @@ display:inline-block;
 }
 .border-5{border-width: 5px !important;}
 
+.mySolidGrey{background-color: rgba(222, 225, 228,0.4);}
 /*needs rename grey sunrise*/
 .myGreyTransBackground{background: linear-gradient(rgb(255, 251, 217),transparent );
   /*background: radial-gradient(at bottom center,rgba(255, 0, 0,0.5),rgba(255, 140, 0,0.4),rgba(255, 215, 0,0.3),rgba(255, 215, 0,0.2), rgba(255, 255, 255,0.25),  rgba(255, 255, 255,0.1) );*/
 }
 .transparentGrey{
-background: linear-gradient(to top, rgba(222, 225, 228, 0.8), transparent,rgba(222, 225, 228, 0.8));
+background: linear-gradient(to top,rgba(222, 225, 228, 0.8), rgba(222, 225, 228, 0.2), transparent,rgba(222, 225, 228, 0.8));
 }
 .bg-circleBottom{z-index:0;position:absolute;border-radius:100%;background:linear-gradient(0deg,rgb(255, 251, 217) 0,rgb(255, 245, 153) 100%)}
 .bg-circleBottom-1{height:90rem;width:90rem;bottom:-10rem;left:-55rem; z-index:-1;}
@@ -69,10 +70,24 @@ background: linear-gradient(to top, rgba(222, 225, 228, 0.8), transparent,rgba(2
       background-color: rgba(237,245,67,0.85);
       text-align: center;
 }
+.transWhiteBackground{
+background: radial-gradient( rgba(255, 255, 255,0.8),rgba(255, 255, 255,0.5), transparent);/*rgba(247, 247, 247,0.8)*/
+   /*want inverse of inset box shadow*/
 
+}
+.contactImageBox{ position:relative;}
+.contact-image{
+margin:auto;
+  bottom: 0;
+  position:absolute;
+  display:flex;
+  width:100%;
 
-
-
+}
+.contactImageSize{
+  width:7rem;
+  height:7rem;
+}
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;

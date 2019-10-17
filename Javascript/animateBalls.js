@@ -1,3 +1,4 @@
+/*needs to reset on next page load*/
 
   var loopTop = 0;
   	(function animationLoopOnLoad() {
@@ -63,7 +64,7 @@
 
     			console.log(7);
     			$(".bg-circleBottom").animate({left: '1px'},2000);
-    		
+
     	};
 
       var triggerWhenInView = function() {
