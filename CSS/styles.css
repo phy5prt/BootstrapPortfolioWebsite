@@ -31,6 +31,8 @@ display:inline-block;
   width:100px;
 
 }
+.alignEmail{margin: auto;}
+.myEmail{width:200px;}
 
 .no-flex{
   display:block !important;
