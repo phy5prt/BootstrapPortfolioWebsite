@@ -2,6 +2,7 @@
 <!doctype html>
  <html lang="en">
 
+<!--uses datafire example here https://github.com/DataFire/Integrations/blob/master/integrations/generated/google_gmail/index.js-->
 
   <head>
     <meta charset="utf-8">
@@ -44,30 +45,9 @@
 
     <header>
 
-  <!-- <div class="collapse bg-dark" id="navbarHeader">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8 col-md-7 py-4">
-          <h4 class="text-white">About</h4>
-          <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
-        </div>
-        <div class="col-sm-4 offset-md-1 py-4">
-          <h4 class="text-white">Contact</h4>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-white">Follow on Twitter</a></li>
-            <li><a href="#" class="text-white">Like on Facebook</a></li>
-            <li><a href="#" class="text-white">Email me</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
-<!--  <div class="navbar navbar-dark bg-dark shadow-sm"> -->
 
 <nav class="navbar bg-light shadow-sm fixed-top no-flex border-bottom border-dark border-5  ">
-<!--
- <div class="container d-flex justify-content-between bd-highlight mb-3">-->
+
 <div class="container  d-flex justify-content-between bd-highlight mb-2 no-flex ">
 
      <div class="d-flex justify-content-between bd-highlight">
@@ -87,22 +67,6 @@
          <img class="myNumber" src="Images\myNumber.png"></div>
 
 
-<!--
-
-             <div class="flex-fill ">
-         	<img class="img-fluid rounded-circle mr-2" src="Images\wellITsAFace.png">
-           <strong>Phil Tate</strong>
-            </div>
-
-
-             <div class="flex-fill ">
-             <strong>Give me a call:</strong>
-             </div>
-
-             <div class="flex-fill ">
-               <img class="img-fluid myNumber" src="Images\myNumber.png">
-             </div>
-           -->
        </div>
 
 </div>
@@ -165,7 +129,7 @@
                                                   <div class="input-group-prepend">
                                                       <div class="input-group-text"><i class="fa fa-user"></i></div>
                                                   </div>
-                                                  <input type="text" class="form-control" id="inputLastName" required="">
+                                                  <input type="text" class="form-control" name="inputFirstName" required="">
                                               </div>
                                           </div>
    						</div>
@@ -176,7 +140,7 @@
                       <div class="input-group-prepend">
                           <div class="input-group-text"><i class="fa fa-user "></i></div>
                       </div>
-   								<input type="text" class="form-control" id="inputLastName" required="">
+   								<input type="text" class="form-control" name="inputLastName" required="">
                 </div>
               </div>
    							</div>
@@ -188,8 +152,10 @@
                   <div class="input-group-prepend">
                       <div class="input-group-text"><i class="fa fa-envelope "></i></div>
                   </div>
-   						<input type="email" class="form-control" id="inputEmail" required="">
+   						<input type="email" class="form-control" name="inputEmail" required="">
    					</div>            </div>
+
+
 
    					<div class="form-group">
    						<label for="inputMessage">Message</label>
@@ -197,7 +163,7 @@
                   <div class="input-group-prepend">
                       <div class="input-group-text"><i class="fa fa-comment "></i></div>
                   </div>
-   						<textarea class="form-control" id="inputMessage" rows="5" required=""></textarea>
+   						<textarea class="form-control" name="inputMessage" rows="5" required=""></textarea>
    					</div></div>
 
             <div class="d-flex justify-content-between align-items-center">
@@ -206,8 +172,7 @@
                  <strong class="mr-2">Prefer to email yourself?:</strong>
                <img class="myEmail" src="Images\myEmail.png">
              </div>
-             <input type="text" name="emailAddress">
-             <textarea name="message"></textarea>
+
    					<input type="submit" class="btn btn-primary btn-lg " value="Submit">
 
 </form>
