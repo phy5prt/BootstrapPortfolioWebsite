@@ -3,7 +3,7 @@
  <html lang="en">
 
 <!--uses datafire example here https://github.com/DataFire/Integrations/blob/master/integrations/generated/google_gmail/index.js-->
-
+    <script src='https://www.google.com/recaptcha/api.js'></script>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -166,6 +166,12 @@
                   </div>
    						<textarea class="form-control" name="inputMessage" rows="5" required=""></textarea>
    					</div></div>
+
+
+  <!--register captcha when have a website domain name -->
+  <div class="form-group">
+  <div class="g-recaptcha " data-sitekey="YOUR CAPTCHA KEY CODE"></div>
+</div>
 
             <div class="d-flex justify-content-between align-items-center">
            <div class="navbar-text ">
