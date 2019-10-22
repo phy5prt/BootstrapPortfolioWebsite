@@ -9,6 +9,8 @@
 // but feel really should just remove the datafire template and replace with my own
 // doing from scratch should be able to format the message etc and send a message with CC
 // to the sender etc
+//
+// Or build it using the steps on the left more and not altering code manually
 // */
 // var google_gmail = require('@datafire/google_gmail').actions;
 // module.exports = new datafire.Action({
@@ -31,15 +33,15 @@
 //     let messageToMe = await google_gmail.buildMessage({
 //       to: "websitecontactushandler@gmail.com",
 //       from: "websitecontactushandler@gmail.com",
-//       subject: input.inputFirstName + " "+ input.inputLastName + " has sent you a msg via the bootstrap website contact me:",
-//       body: input.inputFirstName + " "+ input.inputLastName + input.inputMessage +"/n" + " replay at : " + input.inputEmail,
+//       subject: input.inputFirstName + " "+ input.inputLastName + " has sent you a msg via the bootstrap website contact me page",
+//       body: input.inputFirstName + " "+ input.inputLastName +" sent:  " + input.inputMessage +"                                             " + " Reply to them at : " + input.inputEmail,
 //     }, context);
 //
 //         let messageToThem = await google_gmail.buildMessage({
 //       to: input.inputEmail,
 //       from: "websitecontactushandler@gmail.com",
-//       subject: "You sent: " + input.inputFirstName + " "+ input.inputLastName + " has sent you a msg via the bootstrap website contact me:",
-//       body: input.inputFirstName + " "+ input.inputLastName + input.inputMessage +"/n" + " reply at : " + input.inputEmail,
+//       subject: "You sent: " + input.inputFirstName + " "+ input.inputLastName + " has sent you a msg via the bootstrap website contact me page",
+//       body: input.inputFirstName + " "+ input.inputLastName +" sent:  " +  input.inputMessage +"                                             " + " Reply to them at : " + input.inputEmail,
 //     }, context);
 //
 //     let sentToMe = await google_gmail.users.messages.send({

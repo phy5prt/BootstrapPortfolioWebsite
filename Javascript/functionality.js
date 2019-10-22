@@ -11,3 +11,27 @@ $(".myCaption").not( $thisCaption).show("fast"); /*cannot detect clicks in ifram
 $('[data-toggle="tooltip"]').tooltip({
     trigger : 'hover'
 })
+
+
+$(function () {
+  $('#contact-form').on('submit', function (submitClick) {
+
+    var url = "https://strong-albatross.prod.with-datafire.io/contact";
+
+    $.ajax({
+     type: "POST",
+     url: url,
+     data: $(this).serialize(),
+     success: function (data) {
+
+  alert(data);
+     $('#firstInput').focus(); // focus on first box so submit loses focus
+       $('#contact-form')[0].reset()
+      }
+
+    });
+    return false;
+
+   }
+  )
+});
