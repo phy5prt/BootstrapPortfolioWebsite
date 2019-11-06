@@ -6,6 +6,15 @@
   -ms-user-select: none;
   user-select: none;
 }
+/* .card{border:solid black 2px} /*this makes shadow too light maybe all colors need to be muted*/
+/*
+.areasOfExperienceCardsBorderColor{border-color:green}
+.languageCardsBorderColor{border-color:blue}
+.stackCardsBorderColor{border-color:plum}
+.courseCardsBorderColor{border-color:gold}
+.specificProjectBorderColor{border-color:yellow}
+*/
+
 
 .btn-group{display:flex;}
 
