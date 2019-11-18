@@ -25,6 +25,13 @@ overflow-x:hidden; /*shapes cause horiz to appear */
   max-height:25px;max-width:25px;
 
 }
+/* centre and something responsive  */
+/* iframe {
+   display: block;
+   margin: 0 auto;
+}
+.embedded-responsive{display:static;} */
+
 
 
 .myFace{
@@ -69,7 +76,26 @@ background: linear-gradient(to top,rgba(222, 225, 228, 0.8), rgba(222, 225, 228,
 .bg-circle-3{height:20rem;width:20rem;top:-10rem;right:5%; z-index:-1;}
 .bg-circle-4{height:30rem;width:30rem;bottom:-5rem;right:35%; z-index:-1;}
 
-.relativeParentImgCaption{position:relative;}
+.relativeParentImgCaption{
+  position:relative;
+height:225px;
+width: 100%;
+background-color: var(--dark);
+
+ padding:5px;
+}
+.imgRatioedSizedAndCentered {
+  position: absolute;
+  max-width:98%;
+  max-height:98%;
+  width: auto;
+  height:auto;
+  margin:auto;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right:0;
+}
 
 
 .myCaption {
@@ -101,6 +127,9 @@ margin:auto;
   width:7rem;
   height:7rem;
 }
+
+
+
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
