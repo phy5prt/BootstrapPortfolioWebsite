@@ -25,12 +25,9 @@ overflow-x:hidden; /*shapes cause horiz to appear */
   max-height:25px;max-width:25px;
 
 }
-/* centre and something responsive  */ */
-/* iframe {
-   display: block;
-   margin: 0 auto;
-}
-.embedded-responsive{display:static;}
+/* centre and something responsive  */
+
+
 
 
 
@@ -78,7 +75,7 @@ background: linear-gradient(to top,rgba(222, 225, 228, 0.8), rgba(222, 225, 228,
 
 .relativeParentImgCaption{
   position:relative;
-height:225px;
+min-height:225px;
 width: 100%;
 background-color: var(--dark);
 
