@@ -7,11 +7,11 @@
   user-select: none;
 }
 
-.areasOfExperienceCardsBorderColor{border-color:green}
-.languageCardsBorderColor{border-color:blue}
-.stackCardsBorderColor{border-color:plum}
-.courseCardsBorderColor{border-color:gold}
-.specificProjectBorderColor{border-color:yellow}
+.areasOfExperienceCardsBorderColor{border-color:green !important}
+.languageCardsBorderColor{border-color:blue !important}
+.stackCardsBorderColor{border-color:plum !important}
+.courseCardsBorderColor{border-color:gold !important}
+.projectCardsBorderColor{border-color:yellow !important}
 
 
 
@@ -103,7 +103,11 @@ background-color: var(--dark);
   right:0;
 }
 
+.cardsSeperator{
+      border: 1px solid rgba(0,0,0,.125);
+      font-size: 1.5rem;
 
+}
 .myCaption {
 
   text-align: center;
