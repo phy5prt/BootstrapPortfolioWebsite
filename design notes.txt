@@ -1,0 +1,8 @@
+To do Portfolio Bootstrap
+
+do recaptcha - https://gist.github.com/jiankaiwang/dc5690318bd035232a8ac9294bc2af29 
+Review the sections
+Review captions
+I phone 5 buttons different heights on contact
+tidy up buttons so have same kind of message on them
+clearer tool tips
