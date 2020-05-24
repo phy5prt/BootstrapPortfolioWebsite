@@ -6,3 +6,5 @@ Review captions
 I phone 5 buttons different heights on contact
 tidy up buttons so have same kind of message on them
 clearer tool tips
+
+dont expect ppl to know the symbols for techs you need tool tips
